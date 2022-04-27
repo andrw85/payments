@@ -1,0 +1,17 @@
+[package]
+name = "payments"
+version = "0.1.0"
+edition = "2018"
+authors = ["Andrew O'Doherty <andrew.olv@gmail.com>"]
+description = "payments is a toy payment engine that reads a series of transactions from a CSV"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+payments-core = { path = "../payments-core" }
+clap = { version = "3.1.12", features = ["derive"] }
+anyhow = "1.0.57"
+
+log = "0.4.16"
+env_logger = "0.9.0"
+
